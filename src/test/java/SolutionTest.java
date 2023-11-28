@@ -28,4 +28,21 @@ public class SolutionTest {
 
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void numberOfWaysTest4() {
+        String corridor = "SPPSSSSPPS";
+        int expected = 1;
+        int actual = new Solution().numberOfWays(corridor);
+
+        Assert.assertEquals(expected, actual);
+    }
+    @Test
+    public void numberOfWaysTest5() {
+        String corridor = "PPPPPPPSPPPSPPPPSPPPSPPPPPSPPPSPPSPPSPPPPPSPSPPPPPSPPSPPPPPSPPSPPSPPPSPPPPSPPPPSPPPPPSPSPPPPSPSPPPSPPPPSPPPPPSPSPPSPPPPSPPSPPSPPSPPPSPPSPSPPSSSS";
+        int expected = 18335643;
+        int actual = new Solution().numberOfWays(corridor);
+
+        Assert.assertEquals(expected, actual);
+    }
 }
